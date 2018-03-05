@@ -14,7 +14,7 @@ public class Human {
         powerLevel = p;
         h = hairColor;
     }
-    public String yell(String phrase) {
+    public void yell(String phrase) {
         System.out.println(phrase);
     }
 
