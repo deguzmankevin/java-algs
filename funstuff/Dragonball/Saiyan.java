@@ -3,9 +3,11 @@ package dragonball;
 class Saiyan {
     private int powerLevel = 100;
     private String hairColor = "black";
-
+    private int speed;
+    private String stage = "Base Form";
     public Saiyan (int p) {
         powerLevel = p;
+        speed = 50;
     }
     public Saiyan(int p, String h) {
         /**Create a saiyan with a base power level and hair color **/
@@ -25,11 +27,28 @@ class Saiyan {
     public void powerUp() {
         scream();
         powerLevel *= 2;
+        speed *= 2;
         System.out.println("Your power has grown to " + powerLevel);
     }
     public void scream() {
         System.out.println("HAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
     }
-
+    public void superSaiyan(int p) {
+        if (p == 1) {
+            powerLevel *= 50;
+            speed *= 10;
+        }
+        else if (p == 2) {
+            powerLevel *= 100;
+            speed = speed / 3;
+        }
+        else if (p == 3) {
+            powerLevel *= 150;
+            speed = speed / 2;
+        }
+        else {
+            System.out.println("You are not yet strong enough to ascend.");
+        }
+    }
 
 }
