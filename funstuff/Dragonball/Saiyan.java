@@ -49,6 +49,17 @@ class Saiyan {
         else {
             System.out.println("You are not yet strong enough to ascend.");
         }
+
+
+
+    }
+    public Saiyan fusionDance(Saiyan s1, Saiyan s2) {
+        if (Math.abs(s1.powerLevel - s2.powerLevel) < 1000)  {
+            Saiyan s3 = new Saiyan((s1.powerLevel + s2.powerLevel) * 100);
+            s3.speed = (s1.speed + s2.speed) * 50;
+            return s3;
+        }
+        return null;
     }
 
 }
