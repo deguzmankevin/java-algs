@@ -1,6 +1,6 @@
-package dragonball;
+package funstuff.Dragonball;
 
-class Saiyan {
+class Saiyan extends Being{
     private int powerLevel = 100;
     private String hairColor = "black";
     private int speed;

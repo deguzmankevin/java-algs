@@ -3,10 +3,10 @@ package funstuff.Dragonball;
 /**
  * Created by Kevin on 3/5/2018.
  */
-public class Human {
+public class Human extends Being{
     private int powerLevel = 25;
     private String hairColor;
-
+    private int speed = 5;
     public Human(int p) {
         powerLevel = p;
     }

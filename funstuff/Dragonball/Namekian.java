@@ -1,8 +1,8 @@
-package dragonball;
+package funstuff.Dragonball;
 
-class Namekian {
+class Namekian extends Being{
     private int powerLevel = 50;
-
+    private int speed = 40;
 
     public void recharge() {
 
