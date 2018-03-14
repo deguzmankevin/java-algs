@@ -6,5 +6,5 @@ import java.util.ArrayList;
  */
 public abstract class Place {
     private int capacity;
-    private ArrayList<Being>;
+    private ArrayList<Being> beings;
 }
