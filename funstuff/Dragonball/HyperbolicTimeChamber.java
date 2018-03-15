@@ -11,7 +11,7 @@ public class HyperbolicTimeChamber extends Place {
 
     //train a being for t hours
     public void train(Being b, int t) {
-        if (t > 50) {
+        if (t > 50 || t < 1) {
             System.out.println("You cannot train for that long.");
             return;
         }

@@ -5,6 +5,5 @@ package funstuff.Dragonball;
  */
 public abstract class Being {
     int powerLevel;
-    String hairColor;
     int speed;
 }
